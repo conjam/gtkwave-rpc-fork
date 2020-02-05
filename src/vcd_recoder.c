@@ -723,7 +723,7 @@ if(GLOBALS->numsyms_vcd_recoder_c_3)
 			v=v->next;
 			}
 
-		qsort(GLOBALS->sorted_vcd_recoder_c_3, GLOBALS->numsyms_vcd_recoder_c_3, sizeof(struct vcdsymbol *), vcdsymcompare);
+		mergesort(GLOBALS->sorted_vcd_recoder_c_3, GLOBALS->numsyms_vcd_recoder_c_3, sizeof(struct vcdsymbol *), vcdsymcompare);
 		}
 	}
 }
